@@ -23,4 +23,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::resource('/receptek', ReceptController::class);
 Route::resource('/kategoriak', KategoriaController::class);
 Route::get('/recept-kategoria/{kategoria}', [ReceptController::class, 'filterByCategory']);
-Route::get('/leiro', [ReceptController::class, "leiro"]);
+Route::get('/leiro', [ReceptController::class, "fejlec"]);

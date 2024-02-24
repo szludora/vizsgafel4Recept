@@ -48,16 +48,15 @@ class ReceptController extends Controller
     }
 
     public function leiro()
-    { {
-            return [
-                "fejlec" => [
-                    "Név", "Kategória"
+    {
+        /* return [
+            "fejlec" => [
+                "Név", "Kategória"
 
-                ],
-                "teljes" => [
-                    "Név", "Kategória", "Leírás", "Dátum", "Kép"
-                ]
-            ];
-        }
+            ],
+            "teljes" => [
+                "Név", "Kategória", "Leírás", "Dátum", "Kép"
+            ]
+        ]; */
     }
 }
