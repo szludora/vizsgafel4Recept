@@ -46,4 +46,18 @@ class ReceptController extends Controller
             ->where('kat_id', $cat)
             ->get();
     }
+
+    public function leiro()
+    { {
+            return [
+                "fejlec" => [
+                    "Név", "Kategória"
+
+                ],
+                "teljes" => [
+                    "Név", "Kategória", "Leírás", "Dátum", "Kép"
+                ]
+            ];
+        }
+    }
 }
