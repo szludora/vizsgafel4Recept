@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Recept;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ReceptController extends Controller
 {
@@ -37,5 +38,12 @@ class ReceptController extends Controller
     public function destroy($id)
     {
         Recept::findOrFail($id)->delete();
+    }
+
+    public function filterByCategory($cat)
+    {
+        return DB::table("recepts")
+            ->where('kat_id', $cat)
+            ->get();
     }
 }
